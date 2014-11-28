@@ -21,7 +21,9 @@ map k gk
 " put backups out of the way
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
-" persistent undo
+
+" Persistent undo
+set undofile
 set undodir=~/.vim/undo
 set undolevels=1000
 set undoreload=10000
