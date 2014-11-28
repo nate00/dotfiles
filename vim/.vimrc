@@ -66,14 +66,6 @@ autocmd QuickFixCmdPost *grep* cwindow
 set wildmenu
 set wildmode=full
 
-" User :NumbersToggle or :NumbersOnOff to switch line numbering
-"
-" Notes on shortcuts:
-" :vert stag {class-name}   " opens the file containing class {class-name} in a 
-"                           " vertical split
-" :tab tag {class-name}     " opens the file containing class {class-name} in
-"                           " a new tab
-
 """ Plugins """
 
 " Set up Vundle
