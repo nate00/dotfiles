@@ -11,9 +11,6 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 
-" Make
-set makeprg=g++\ %\ -O3\ -o\ t
-
 " Autowrite
 set autowrite
 
@@ -58,9 +55,6 @@ map <C-h> :call GoLeft()<CR>
 map <C-j> :call GoDown()<CR>
 map <C-k> :call GoUp()<CR>
 map <C-l> :call GoRight()<CR>
-
-" Disable annoying stuff from plugins
-let g:vim_markdown_folding_disabled=1
 
 " Open quickfix for grep, Ggrep
 autocmd QuickFixCmdPost *grep* cwindow
