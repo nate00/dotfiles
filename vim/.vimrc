@@ -34,9 +34,6 @@ set undodir=~/.vim/undo
 set undolevels=1000
 set undoreload=10000
 
-" Searching
-set ignorecase
-
 " Status line
 set laststatus=2          " Display filename.
 
