@@ -24,6 +24,10 @@ map j gj
 map k gk
 set linebreak
 
+" Eager scrolling
+set scrolloff=8
+set sidescrolloff=15
+
 " Backups
 set backupdir=~/.vim/backup   " Backups in the working directory are annoying.
 set directory=~/.vim/backup
