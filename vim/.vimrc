@@ -72,3 +72,25 @@ set wildmode=full
 " :tab tag {class-name}     " opens the file containing class {class-name} in
 "                           " a new tab
 
+""" Plugins """
+
+" Set up Vundle
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+
+" Use Vundle to load plugins
+Plugin 'tpope/vim-fugitive'   " git integration
+Plugin 'kien/ctrlp.vim'       " fuzzy file finder
+
+" Language-specific plugins
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'tpope/vim-rails'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'slim-template/vim-slim'
+
+" Finish setting up Vundle
+call vundle#end()
+filetype plugin indent on
