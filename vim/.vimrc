@@ -1,23 +1,34 @@
-set nocompatible
+set nocompatible          " Welcome to Vim.
+
+" Colors
 syntax enable
 set background=dark
+
+" Indentation
 set cindent
-set nowrap
-set tabstop=2
-set shiftwidth=2
-set makeprg=g++\ %\ -O3\ -o\ t
-set autowrite
-set linebreak
-set nolist
-set number
 set nosmartindent
 set expandtab
+set tabstop=2
+set shiftwidth=2
 
+" Make
+set makeprg=g++\ %\ -O3\ -o\ t
+
+" Autowrite
+set autowrite
+
+" Line numbers
+set number
+
+" Line wrapping
+set nowrap                " Don't wrap long lines...
+                          " ...but if I do, enable navigation within such lines.
 map j gj
 map k gk
+set linebreak
 
-" put backups out of the way
-set backupdir=~/.vim/backup
+" Backups
+set backupdir=~/.vim/backup   " Backups in the working directory are annoying.
 set directory=~/.vim/backup
 
 " Persistent undo
@@ -26,20 +37,21 @@ set undodir=~/.vim/undo
 set undolevels=1000
 set undoreload=10000
 
-" Ignore case for searches
+" Searching
 set ignorecase
 
-" Display filename at all times
-set ls=2
+" Status line
+set laststatus=2          " Display filename.
 
 " Highlight tabs
 syn match tab display "\t"
 hi link tab Error
 
+" Folding
 set foldmethod=syntax
 set foldlevelstart=99
 
-" Wrong way to do this, I think
+" Load my toy plugin
 source ~/.vim/plugins/ConsolidatedMovement.vim
 
 map <C-h> :call GoLeft()<CR>
