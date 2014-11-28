@@ -9,11 +9,9 @@ set makeprg=g++\ %\ -O3\ -o\ t
 set autowrite
 set linebreak
 set nolist
-set ruler
 set number
 set nosmartindent
 set expandtab
-set smarttab
 
 map j gj
 map k gk
@@ -33,14 +31,6 @@ set ignorecase
 
 " Display filename at all times
 set ls=2
-
-" Make <Esc> then O work faster. Also disable arrow keys in insert mode.
-"set noesckeys
-" Make <Esc> then O work faster.
-set timeout timeoutlen=1000 ttimeoutlen=100
-
-" Use tags from all directories
-set tags=tags;/
 
 " Highlight tabs
 syn match tab display "\t"
@@ -63,9 +53,6 @@ let g:vim_markdown_folding_disabled=1
 " Open quickfix for grep, Ggrep
 autocmd QuickFixCmdPost *grep* cwindow
 
-set wildmenu
-set wildmode=full
-
 """ Plugins """
 
 " Set up Vundle
@@ -75,6 +62,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Use Vundle to load plugins
+Plugin 'tpope/vim-sensible'   " config defaults
 Plugin 'tpope/vim-fugitive'   " git integration
 Plugin 'kien/ctrlp.vim'       " fuzzy file finder
 
