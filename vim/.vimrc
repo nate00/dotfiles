@@ -38,8 +38,8 @@ set undoreload=10000
 set laststatus=2          " Display filename.
 
 " Highlight tabs
-syn match tab display "\t"
-hi link tab Error
+syntax match tab display "\t"
+highlight link tab Error
 
 " Folding
 set foldmethod=syntax
@@ -60,7 +60,7 @@ autocmd QuickFixCmdPost *grep* cwindow
 
 " Set up Vundle
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
+set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
