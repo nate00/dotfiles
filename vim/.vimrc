@@ -5,11 +5,10 @@ syntax enable
 set background=dark
 
 " Indentation
-set cindent
-set nosmartindent
-set expandtab
-set tabstop=2
-set shiftwidth=2
+set expandtab             " Use soft tabs.
+set shiftwidth=2          " Use two spaces for autoindent.
+set tabstop=2             " Display hard tabs with width two.
+set softtabstop=2         " Pressing tab inserts two spaces.
 
 " Autowrite
 set autowrite
