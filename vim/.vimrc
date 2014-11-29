@@ -70,6 +70,7 @@ Plugin 'gmarik/Vundle.vim'
 " Use Vundle to load plugins
 Plugin 'tpope/vim-sensible'   " config defaults
 Plugin 'tpope/vim-fugitive'   " git integration
+Plugin 'tpope/vim-tbone'      " tmux integration
 Plugin 'kien/ctrlp.vim'       " fuzzy file finder
 
 " Language-specific plugins
