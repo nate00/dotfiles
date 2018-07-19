@@ -1,0 +1,16 @@
+Install Vundle
+
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+Create necessary directories
+
+  mkdir -p ~/.vim/backup
+  mkdir -p ~/.vim/undo
+
+Symlink the config
+
+  ln -s $PATH_TO_DOTFILES_REPO/vim/.vimrc ~/.vimrc
+
+Install plugins
+
+  vim +PluginInstall +qall
