@@ -1,0 +1,12 @@
+Install Exuberant Ctags, so we can automatically set up ctags for all git repos. For example,
+
+  sudo apt-get install exuberant-ctags
+
+You could consider using ripper-tags for Ruby instead. Instructions here: https://github.com/tpope/gem-ctags/issues/10#issuecomment-304421664
+
+Symlink config files into place
+
+  ln -si $PATH_TO_DOTFILES_REPO/git/.gitignore_global ~/
+  ln -si $PATH_TO_DOTFILES_REPO/git/.git_template ~/
+  ln -si $PATH_TO_DOTFILES_REPO/git/.gitconfig ~/
+

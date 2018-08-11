@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Original in ~/.git_template/hooks
+# This doesn't seem to work at the moment. Even the vim command by itself
+# doesn't work
+set -e
+vim -c "CtrlPClearCache | q!"

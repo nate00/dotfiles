@@ -1,0 +1,25 @@
+[user]
+	name = Nate Sullivan
+	email = nate@academia.edu
+[core]
+	excludesfile = ~/.gitignore_global
+[branch]
+  autosetuprebase = always
+[alias]
+  br = branch
+  ci = commit
+  co = checkout
+  st = status
+  aa = add --all
+  pullff = pull --ff-only
+  dc = diff --cached
+  graph = log --oneline --graph --decorate
+  wip = "!f() { git commit --no-verify --message \"[wip] $1\"; }; f"
+  current-branch = rev-parse --symbolic-full-name --abbrev-ref HEAD
+  rebasebr = "!f() { git rebase -i $(git merge-base $1 HEAD); }; f"
+[push]
+	default = simple
+[color]
+	ui = auto
+[init]
+	templatedir = ~/.git_template
