@@ -1,0 +1,5 @@
+Symlink the config
+
+  ln -s $PATH_TO_DOTFILES_REPO/ag/.agignore ~/.agignore
+  ln -s $PATH_TO_DOTFILES_REPO/ag/.agrc ~/.agrc
+

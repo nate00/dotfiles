@@ -1,0 +1,15 @@
+log/
+public/assets/
+public/javascripts/
+tmp/cache/
+tmp/jasmine/
+spec/fixtures/files
+spec/vcr_cassettes
+public/system/files
+app/assets/javascripts/webpack_bundles
+app/assets/javascripts/wysihtml5
+app/assets/javascripts/jquery
+development_structure_backup.sql
+_manifest.erb
+structure.sql
+app/assets/javascripts/analytics_dashboard/world_map.js

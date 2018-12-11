@@ -1,0 +1,14 @@
+--ignore-dir=log
+--ignore-dir=public/assets
+--ignore-dir=public/javascripts
+--ignore-dir=tmp/cache
+--ignore-dir=tmp/jasmine
+--ignore-dir=spec/fixtures/files
+--ignore-dir=public/system/files
+--ignore-dir=spec/jupiter_cassettes
+--ignore-file=is:development_structure_backup.sql
+--ignore-file=is:_manifest.erb
+--ignore-file=is:structure.sql
+--ignore-dir=tmp/jasmine/assets
+--ignore-dir=template/static/scripts
+--ignore-dir=app/assets/javascripts/webpack_bundles
