@@ -1,0 +1,4 @@
+Symlink the config
+
+  ln -s $PATH_TO_DOTFILES_REPO/tmux/.tmux.conf ~/.tmux.conf
+
