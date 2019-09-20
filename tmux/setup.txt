@@ -1,4 +1,7 @@
 Symlink the config
 
-  ln -s $PATH_TO_DOTFILES_REPO/tmux/.tmux.conf ~/.tmux.conf
+  ln -s $PATH_TO_DOTFILES_REPO/tmux/.tmux.conf-2.9 ~/.tmux.conf
 
+Or, for my old version of tmux
+  
+  ln -s $PATH_TO_DOTFILES_REPO/tmux/.tmux.conf ~/.tmux.conf
