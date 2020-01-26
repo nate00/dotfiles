@@ -1,0 +1,7 @@
+Symlink the config
+
+  ln -s $PATH_TO_DOTFILES_REPO/shell/.nate_profile ~/.nate_profile
+
+Load .nate_profile from .profile
+  
+  echo 'source ~/.nate_profile' >> ~/.profile
