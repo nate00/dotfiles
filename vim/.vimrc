@@ -140,6 +140,13 @@ let g:table_mode_separator = '|'
 let g:table_mode_fillchar = '-'
 
 
+""" Security """
+" Avoid this ACE vulnerability:
+" https://github.com/numirias/security/blob/master/doc/2019-06-04_ace-vim-neovim.md
+set modelines=0
+set nomodeline
+
+
 """ Clipboard """
 
 " Set up pbcopy yanking
