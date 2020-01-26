@@ -1,3 +1,30 @@
+Install on Mac
+
+  brew install the_silver_searcher
+
+Install on Ubuntu. (Last I checked, apt-get only has version 0.19.2, which doesn't include --vimgrep)
+
+  Install dependencies
+
+    sudo apt-get install -y automake pkg-config libpcre3-dev zlib1g-dev liblzma-dev
+
+  Download and verify
+
+    gpg --import $PATH_TO_DOTFILES_REPO/ag/ggreer_gpg_key.asc
+    wget -O /tmp/the_silver_searcher-2.2.0.tar.gz https://geoff.greer.fm/ag/releases/the_silver_searcher-2.2.0.tar.gz
+    gpg --verify $PATH_TO_DOTFILES_REPO/ag/the_silver_searcher-2.2.0.tar.gz.asc \
+      /tmp/the_silver_searcher-2.2.0.tar.gz
+
+  If the signature is good, then install
+
+    cd /tmp
+    tar -xzf the_silver_searcher-2.2.0.tar.gz
+    cd the_silver_searcher-2.2.0
+    ./configure
+    make
+    sudo make install
+    cp ag /usr/bin/local
+
 Symlink the config
 
   ln -s $PATH_TO_DOTFILES_REPO/ag/.agignore ~/.agignore
