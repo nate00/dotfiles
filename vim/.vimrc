@@ -29,7 +29,6 @@ Plugin 'tpope/vim-bundler'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'slim-template/vim-slim'
 Plugin 'derekwyatt/vim-scala'
-Plugin 'git://vim-scripts/sql.vim--Stinson'
 " Rendering the markdown somehow f's up my Vim session
 "Plugin 'godlygeek/tabular'        " required by vim-markdown
 "Plugin 'plasticboy/vim-markdown'
